@@ -10,7 +10,8 @@
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:functional": "jest --projects ./test --forceExit --runInBand"
+    "test:functional": "jest --projects ./test --forceExit --runInBand",
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
   },
   "dependencies": {
     "@types/config": "^0.0.39",
+    "axios": "^0.21.1",
     "config": "^3.3.6",
     "module-alias": "^2.2.2"
   }
