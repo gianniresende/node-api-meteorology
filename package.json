@@ -9,7 +9,8 @@
     "start:dev": "ts-node-dev 'src/index.ts'",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:functional": "jest --projects ./test --forceExit --runInBand"
   },
   "repository": {
     "type": "git",
@@ -27,11 +28,16 @@
   },
   "homepage": "https://github.com/gianniresende/node-api-meteorology#readme",
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^16.6.1",
+    "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "supertest": "^6.1.5",
+    "ts-jest": "^27.0.4",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
   },
